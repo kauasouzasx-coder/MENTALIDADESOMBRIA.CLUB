@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RESET MENTAL - Clube Mentalidade Sombria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            overflow-x: hidden;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 430px;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            display: flex;
+            flex-direction: column;
+            background-color: #000000;
+            position: relative;
+        }
+
+        .hero-wrapper {
+            width: 100%;
+            height: 55vh;
+            min-height: 300px;
+            max-height: 500px;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to top, #000000 0%, transparent 100%);
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 24px 48px;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .welcome-text {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 4px;
+            color: #666666;
+            text-transform: uppercase;
+        }
+
+        .club-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 8vw, 36px);
+            font-weight: 700;
+            line-height: 1.15;
+            color: #FFFFFF;
+            white-space: pre-line;
+        }
+
+        .divider {
+            width: 50px;
+            height: 1px;
+            background-color: #333333;
+        }
+
+        .description {
+            font-size: 14px;
+            font-weight: 400;
+            color: #777777;
+            line-height: 1.6;
+            max-width: 300px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 16px 40px;
+            background-color: #FFFFFF;
+            color: #000000;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            border-radius: 28px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            margin-top: 8px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 40px rgba(255, 255, 255, 0.15);
+        }
+
+        .cta-button:active {
+            transform: scale(0.97);
+        }
+
+        @media (max-width: 430px) {
+            .container {
+                max-width: 100%;
+            }
+
+            .hero-wrapper {
+                height: 50vh;
+                min-height: 260px;
+            }
+
+            .content {
+                padding: 28px 20px 40px;
+                gap: 18px;
+            }
+
+            .club-name {
+                font-size: clamp(26px, 7vw, 34px);
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero-wrapper {
+                height: 45vh;
+                min-height: 220px;
+            }
+
+            .content {
+                padding: 24px 16px 36px;
+                gap: 16px;
+            }
+
+            .club-name {
+                font-size: 24px;
+            }
+
+            .cta-button {
+                padding: 14px 32px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-height: 700px) {
+            .hero-wrapper {
+                height: 40vh;
+                min-height: 180px;
+            }
+
+            .content {
+                gap: 14px;
+            }
+        }
+
+        @media (min-height: 800px) {
+            .hero-wrapper {
+                height: 55vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-wrapper">
+            <img src="wolf.jpg.png" alt="Wolf Avatar - Mentalidade Sombria" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="content">
+            <span class="welcome-text">Bem-vindo ao</span>
+            
+            <h1 class="club-name">CLUBE
+MENTALIDADE
+SOMBRIA</h1>
+            
+            <div class="divider"></div>
+            
+            <p class="description">
+                Descubra seus pontos fortes e áreas de melhoria. Faça seu diagnóstico mental agora.
+            </p>
+            
+            <a href="https://resetmentalquiz.netlify.app/" target="_blank" class="cta-button">
+                Fazer Diagnóstico
+            </a>
+        </div>
+    </div>
+</body>
+</html>
